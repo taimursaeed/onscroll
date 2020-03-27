@@ -1,0 +1,32 @@
+[data-animation] {
+  transition: opacity 1s ease, transform 1s ease;
+}
+[data-animation="fade"] {
+  opacity: 0;
+}
+[data-animation="fade-up"] {
+  opacity: 0;
+  transform: translate(0, 30px);
+}
+[data-animation="fade-down"] {
+  opacity: 0;
+  transform: translate(0, -30px);
+}
+[data-animation="fade-right"] {
+  opacity: 0;
+  transform: translate(-30px, 0);
+}
+[data-animation="fade-left"] {
+  opacity: 0;
+  transform: translate(30px, 0);
+}
+[data-animation="fade"].animate {
+  opacity: 1;
+}
+[data-animation="fade-up"].animate,
+[data-animation="fade-down"].animate,
+[data-animation="fade-left"].animate,
+[data-animation="fade-right"].animate {
+  transform: translate(0, 0);
+  opacity: 1;
+}
