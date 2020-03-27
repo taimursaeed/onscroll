@@ -8,7 +8,7 @@ $(document).scroll(function() {
 });
 
 function animateIntoView() {
-  $("[data-animation]").each(function() {
+  $("[data-animation]:not(.animate)").each(function() {
     if (isScrolledIntoView($(this)) && !$(this).hasClass("animate")) {
       $(this).css({
         transitionDelay: $(this).data("animation-delay") + "ms",
@@ -33,6 +33,8 @@ function isScrolledIntoView(elem) {
   var offset = elem.data("animation-offset")
     ? elem.data("animation-offset")
     : defaultOffset;
+  console.log(offset);
   var elemTop = $(elem).offset().top + offset;
-  return docViewBottom >= elemTop;
+  // if window reach bottom of the page {$(document).height() - docViewBottom < 0}
+  return docViewBottom >= elemTop || $(document).height() - docViewBottom < 1;
 }
