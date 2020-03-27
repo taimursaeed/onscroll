@@ -33,7 +33,6 @@ function isScrolledIntoView(elem) {
   var offset = elem.data("animation-offset")
     ? elem.data("animation-offset")
     : defaultOffset;
-  console.log(offset);
   var elemTop = $(elem).offset().top + offset;
   // if window reach bottom of the page {$(document).height() - docViewBottom < 0}
   return docViewBottom >= elemTop || $(document).height() - docViewBottom < 1;
