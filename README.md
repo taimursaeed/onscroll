@@ -15,7 +15,9 @@ https://taimursaeed.github.io/onscroll-animation/
 Get the CSS and JS files from the `/dist` folder 
 
 Include CSS and JS files in the page
+
 `<link  rel="stylesheet"  href="/path/onscroll-animation.css">`
+
 `<script  src="/path/onscroll-animation.js"></script>`
 
 ## Usage
@@ -54,7 +56,9 @@ Controls the trigger point of the animation, value in `px`.
 
 ## Customization
 Use `onscroll-animation.css` to extend animation or change current ones. 
-Like default distance for animation is `30px`. You can change it to `100px` like this:
+Like default distance for animation is `30px`.
+
+You can change it to `100px` like this:
 ```
 [data-animation="fade-up"] {
 	transform: translate(0, 100px);
