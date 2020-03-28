@@ -4,7 +4,7 @@
 
 Animate elements in the website on scroll.
 
-  
+![onScroll Animation Demo](images/demo.gif)
 
 ## Demo
 
