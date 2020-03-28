@@ -62,15 +62,10 @@ Change animation behavior with `data-animation-*` attributes.
 ```html
 
 <div
-
-data-animation="fade"
-
-data-animation-delay="1000"
-
-data-animation-speed="3000"
-
-data-animation-offset="300"
-
+  data-animation="fade"
+  data-animation-delay="1000"
+  data-animation-speed="3000"
+  data-animation-offset="300"
 >
 
 </div>
@@ -116,9 +111,7 @@ You can change it to `100px` like this:
 ```css
 
 [data-animation="fade-up"] {
-
-transform: translate(0, 100px);
-
+  transform: translate(0, 100px);
 }
 
 ```
