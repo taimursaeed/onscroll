@@ -1,14 +1,14 @@
-# OnScroll Animation
+# OnScroll
 
   
 
 Animate elements in the website on scroll.
 
-![onScroll Animation Demo](images/demo.gif)
+![onScroll Demo](images/demo.gif)
 
 ## Demo
 
-https://taimursaeed.github.io/onscroll-animation/
+https://taimursaeed.github.io/onscroll/
 
   
 
